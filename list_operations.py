@@ -11,6 +11,7 @@ def head(input_list):
     """
     input_list = ["Jan", "Feb", "Mar"]
     return input_list[0]
+    
 # return head[0]
 # def head(input_list):
 #     return head[0]
@@ -63,9 +64,9 @@ def first_three(input_list):
     ['Jan', 'Feb', 'Mar']
 
     """
-    input_list = first_three(['Jan', 'Feb', 'Mar', 'Apr', 'May'])
-    ['Jan', 'Feb', 'Mar']
-    return input_list[0:3]
+    input_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
+    return input_list[:3]
+
 # return first_three[0:2]
 
 def last_five(input_list):
@@ -77,8 +78,7 @@ def last_five(input_list):
     [15, 18, 21, 24, 27]
 
     """
-    input_list = ([0, 3, 6, 9, 12, 15, 18, 21, 24, 27])
-
+    input_list = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
     return input_list[-5:]
 
 # return last_five[-5:]
@@ -92,7 +92,7 @@ def middle(input_list):
 
     """
     input_list = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
-    return input_list[2:]
+    return input_list[2:-2]
 
 # return middle[2:-2]
 def inner_four(input_list):
@@ -104,8 +104,8 @@ def inner_four(input_list):
     [6, 9, 12, 15]
 
     """
-
-    return []
+    inner_four = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    return inner_four[2:-4]
 
 # return inner_four[] 
 def inner_four_end(input_list):
@@ -120,8 +120,8 @@ def inner_four_end(input_list):
     [12, 15, 18, 21]
 
     """
-
-    return []
+    inner_four = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    return inner_four[4:8]
 
 
 def replace_head(input_list):
@@ -135,8 +135,10 @@ def replace_head(input_list):
     True
 
     """
-
-    pass
+    multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    multiples[0] = 42
+  
+    return 
 
 
 def replace_third_and_last(input_list):
@@ -150,8 +152,11 @@ def replace_third_and_last(input_list):
     True
 
     """
-
-    pass
+    multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    multiples[2] = 37
+    multiples[9] = 37
+    
+    return 
 
 
 def replace_middle(input_list):
@@ -169,8 +174,10 @@ def replace_middle(input_list):
     True
 
     """
-
-    pass
+    multiples = [0, 3, 6, 9, 12, 15, 18, 21, 24, 27]
+    multiples[2:-2] = [42, 37]
+    
+    return
 
 
 def delete_third_and_seventh(input_list):
@@ -184,8 +191,12 @@ def delete_third_and_seventh(input_list):
     True
 
     """
+    notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    del notes[3]
+    del notes[7]
+    # del notes[7]
 
-    pass
+    return notes
 
 
 def delete_middle(input_list):
@@ -201,8 +212,9 @@ def delete_middle(input_list):
     True
 
     """
-
-    pass
+    notes = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']
+    del notes[3:-3]
+    return
 
 
 # This is the part were we actually run the doctests.
